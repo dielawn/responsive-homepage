@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.flex{
+    display: flex;
+}
+.icon{
+    max-width: 35px;
+}

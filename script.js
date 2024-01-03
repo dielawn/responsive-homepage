@@ -1,4 +1,5 @@
 const workDiv = document.querySelector('.workDiv')
+
 const projects = [
     {
         name: 'Grocery List App',
@@ -48,9 +49,6 @@ const projects = [
         github: 'https://github.com/dielawn/lightning-arcade',
         id: 'lightningArcadeAppDiv',
     },
-
-
-
 ]
 
 
@@ -72,14 +70,27 @@ const displayProjectCards = () => {
        
         const githubLink = document.createElement('a')
         githubLink.href = project.github
+
+        const githubIcon = document.createElement('img')
+        githubIcon.classList.add('icon')
+        githubIcon.src = "icons/github-mark/github-mark.svg"
+
         const weblink = document.createElement('a')
         weblink.href = project.url
+        const webLinkIcon = document.createElement('div')
+        
+        webLinkIcon.innerHTML =  `<span class="material-symbols-outlined">language</span>`
+
         const discTxt = document.createElement('p')
         discTxt.innerText = project.discription
+
+        githubLink.appendChild(githubIcon)
+        weblink.appendChild(webLinkIcon)
 
         cardDiv.appendChild(imgEl)
         cardDiv.appendChild(projHeader)
         cardDiv.appendChild(githubLink)
+        
         cardDiv.appendChild(weblink)
         cardDiv.appendChild(discTxt)
 

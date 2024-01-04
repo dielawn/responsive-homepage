@@ -8,3 +8,30 @@
 .icon{
     max-width: 35px;
 }
+.card {
+    
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    border-bottom: black 2px solid;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 400px;
+    margin: 50px;
+    
+}
+
+.workDiv {
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
+}
+
+.header {
+    
+    padding: 25px;
+}

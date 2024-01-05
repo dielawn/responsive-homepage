@@ -1,5 +1,3 @@
-const workDiv = document.querySelector('.workDiv')
-
 const projects = [
     {
         name: 'Grocery List App',

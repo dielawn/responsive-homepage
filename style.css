@@ -18,18 +18,14 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
-   padding: 25px;
-   margin: 25px;
-    justify-content: space-evenly;
-    
-    
+    padding: 25px;
+    margin: 25px;
+    justify-content: space-evenly;  
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 300px;
     max-width: 400px;
-    min-height: 500px;
-    
-    
+    min-height: 500px;    
 }
 .cardsDiv {
     max-height: 1200px;    
@@ -43,11 +39,9 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    
 }
 .header {
-   
-  align-content: center;
+    align-content: center;
     padding: 25px;
 }
 .portrait {
@@ -57,7 +51,6 @@ body {
     position: relative;
     top: 50px;
     left: 40vw;
-    
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -66,39 +59,33 @@ body {
 }
 .bioDiv {
     position: relative;
-    
     left: 20vw;
-   max-width: 600px;
+    max-width: 600px;
     background-color: white;
     padding: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   
 }
 .bioTxt {    
     max-width: 600px;
     padding: 25px;
-   
 }
 .bioHeader {    
     margin-left: 100px;
 }
 header {
-   
-          
       max-height: fit-content;
       margin: 10px;
-     
       padding: 25px;
 }
 .headerTxt {
     position: relative;
-      top:20vh;
-      left: 40vw;
-      transform: translate(-50%, -50%);     
-      color: white; /* Text color */
-      text-align: center; /* Center the text */
-      font-size: 2.5em; /* Adjust font size as needed */
-      z-index: 9999;
+    top:20vh;
+    left: 40vw;
+    transform: translate(-50%, -50%);     
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    font-size: 2.5em; /* Adjust font size as needed */
+    z-index: 9999;
 }
 .container {
     display: grid;
@@ -112,24 +99,20 @@ header {
 .headerIcon {
     position: relative;
     left: 50%;
-    
 }
 footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-   margin-top: auto;
-   position: relative;
-   justify-self: center;
-   
+    margin-top: auto;
+    position: relative;
+    justify-self: center;
 }
 .linkDiv {
     display: flex;
-    
 }
 .material-symbols-outlined {
-    
     font-variation-settings:
     'FILL' 0,
     'wght' 800,
@@ -186,8 +169,7 @@ footer {
         font-size: 1em;
     }
     .bioDiv {
-        left: 2vw;
-        
+        left: 2vw;        
     }
     .workDiv {
         padding-left: 2vw;

@@ -61,13 +61,16 @@ const displayProjectCards = () => {
         cardDiv.id = project.id
 
         const imgEl = document.createElement('img')
+        imgEl.classList.add('nutImg')
         imgEl.src = project.screenshot
 
         const projHeader = document.createElement('h3')
         projHeader.classList.add('projHeader')
         projHeader.textContent = project.name
 
-       
+       const linksDiv = document.createElement('div')
+       linksDiv.classList.add('linkDiv')
+
         const githubLink = document.createElement('a')
         githubLink.href = project.github
 
@@ -77,9 +80,11 @@ const displayProjectCards = () => {
 
         const weblink = document.createElement('a')
         weblink.href = project.url
-        const webLinkIcon = document.createElement('div')
         
-        webLinkIcon.innerHTML =  `<span class="material-symbols-outlined">language</span>`
+        const webLinkIcon = document.createElement('span')
+        webLinkIcon.innerHTML =  `<span class="material-symbols-outlined icon">
+        arrow_outward
+        </span>`
 
         const discTxt = document.createElement('p')
         discTxt.innerText = project.discription
@@ -89,11 +94,12 @@ const displayProjectCards = () => {
 
         cardDiv.appendChild(imgEl)
         cardDiv.appendChild(projHeader)
-        cardDiv.appendChild(githubLink)
-        
-        cardDiv.appendChild(weblink)
-        cardDiv.appendChild(discTxt)
+        linksDiv.appendChild(githubLink)        
+        linksDiv.appendChild(weblink)
+        cardDiv.appendChild(linksDiv)
 
+        cardDiv.appendChild(discTxt)
+        
         document.querySelector('.workDiv').appendChild(cardDiv)
     })
 }

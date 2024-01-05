@@ -1,27 +1,33 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+body {
+    background-color: whitesmoke;
+}
 .flex{
     display: flex;
 }
 .icon{
-    max-width: 35px;
+    width: 45px;
+   margin: 10px;
+   padding: 7px;
 }
 .card {
     background-color: white;
     display: flex;
     align-items: center;
-   padding: 50px;
+   padding: 25px;
    margin: 25px;
     justify-content: space-evenly;
-    font-size: 1rem;
+    
     
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 300px;
     max-width: 400px;
+    min-height: 500px;
     
     
 }
@@ -31,8 +37,12 @@
 }
 .workDiv {
     display: grid;        
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
     background-color: whitesmoke;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
 }
 .header {
@@ -41,46 +51,26 @@
     padding: 25px;
 }
 .portrait {
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
     display: block;
     position: relative;
+    top: 50px;
+    left: 40vw;
     
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-header {
-    position: relative;
-      max-width: 75%;      
-      left: 20%;
-     
-      padding: 50px;
-}
-.headerTxt {
-    position: absolute;
-      top:100px;
-      left: 350px;
-      transform: translate(-50%, -50%);     
-      color: white; /* Text color */
-      text-align: center; /* Center the text */
-      font-size: 2.5em; /* Adjust font size as needed */
-      z-index: 9999;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    flex-wrap: wrap;
-    font-size: 1.8em;
-    background-color: whitesmoke;
-    
+.blkTxt{
+    color: black;
 }
 .bioDiv {
-    position: absolute;
-    top: 200px;
-    left: 600px;
+    position: relative;
+    
+    left: 20vw;
+   max-width: 600px;
     background-color: white;
-    padding: 25px 50px 50px 100px;
+    padding: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    
 }
@@ -92,17 +82,114 @@ header {
 .bioHeader {    
     margin-left: 100px;
 }
+header {
+   
+          
+      max-height: fit-content;
+      margin: 10px;
+     
+      padding: 25px;
+}
+.headerTxt {
+    position: relative;
+      top:20vh;
+      left: 40vw;
+      transform: translate(-50%, -50%);     
+      color: white; /* Text color */
+      text-align: center; /* Center the text */
+      font-size: 2.5em; /* Adjust font size as needed */
+      z-index: 9999;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1 fr;
+    position: relative;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    background-color: whitesmoke;
+}
+
 .headerIcon {
     position: relative;
-    left: 500px;
-    padding: 7px;
+    left: 50%;
+    
 }
 footer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    border: solid 1px black;
-    position: relative;
-    bottom: 0px;
-    margin-top: 250px;
+   margin-top: auto;
+   position: relative;
+   justify-self: center;
+   
+}
+.linkDiv {
+    display: flex;
+    
+}
+.material-symbols-outlined {
+    
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 24
+  }
+.nutImg{
+    max-width: 100px;
+}
+.phoneDiv {
+    align-items: center;
+}
+@media screen and (max-width: 1250px) {
+    footer{
+        position: absolute;
+        bottom: -80vh;
+    }
+}
+@media screen and (max-width: 850px) {
+    .bioDiv {
+        left: 10vw;
+        font-size: .8em;
+        padding: 25px;
+        max-width: 450px;
+    }
+    .bioHeader{
+        margin-left: 25px;
+    }
+    footer{
+        position: absolute;
+        bottom: -110%;
+    }
+    .workDiv {
+        padding-left: 15vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .portrait {       
+        left: 25vw;   
+        top: 0;
+    }
+    .headerTxt {
+       font-size: 1.7em;
+        top:18vh;
+        left: 25vw;
+    }
+    footer {
+        font-size: .7em;
+    }
+ 
+}
+@media screen and (max-width: 500px) {
+    .container{
+        font-size: 1em;
+    }
+    .bioDiv {
+        left: 2vw;
+        
+    }
+    .workDiv {
+        padding-left: 2vw;
+    }
 }
